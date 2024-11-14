@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>
+        Faça um algoritmo que leia quatro notas obtidas por um aluno, 
+        calcule a média das nota obtidas, imprima na tela o nome do aluno
+        e se o aluno foi aprovado ou reprovado. Para o aluno ser 
+        considerado aprovado sua média final deve ser maior ou igual a 7
+    </h2>
+    <script>
+        let aluno = prompt("digite seu nome");
+        let nota1 = parseFloat(prompt("digite sua primeira nota"));
+        let nota2 = parseFloat(prompt("digite sua segunda nota"));
+        let nota3 = parseFloat(prompt("digite sua terceira nota"));
+        let nota4 = parseFloat(prompt("digite sua quarta nota"));
+
+        let calculo = (nota1+nota2+nota3+nota4) /4;
+
+        if (calculo >= 7) {
+            document.write("O aluno "+ aluno + " esta com media: " + calculo + " e esta Aprovado(Parabens!)");
+        }
+
+        else {
+            document.write("O aluno "+ aluno + " esta com media: " + calculo + " Reprovado (tente novamente)")
+        }
+
+
+      
+      
+    </script>
+</body>
+</html>
