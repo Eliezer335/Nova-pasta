@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Faça um algoritmo que leia o valor de um produto e determine o valor que deve ser pago, 
+        conforme a escolha da forma de pagamento
+        pelo comprador e imprima na tela o valor final do produto a ser pago. Utilize os códigos 
+        da tabela de condições de pagamento para efetuar o cálculo adequado. <br> <br>     
+       
+        Tabela de Código de Condições de Pagamento  <br> <br>    
+       
+        1 - À Vista em Dinheiro ou Pix, recebe 15% de desconto<br> 
+       
+        2 - À Vista no cartão de crédito, recebe 10% de desconto<br> 
+       
+        3 - Parcelado no cartão em duas vezes, preço normal do produto sem juros<br> 
+       
+        4 - Parcelado no cartão em três vezes ou mais, preço normal do produto mais juros de 10% <br> </h2>
+
+    <script>
+
+        let valorProd = parseFloat(prompt("Digite o valor do produto para saber as condições de pagamento "));
+        let conPagamento = parseInt(prompt("Digite qual das opções de pagamento voce deseja \n1- À Vista\n2- À Vista no cartão de crédito\n3-  Parcelado no cartão em duas vezes\n4- Parcelado no cartão em três vezes ou mais  " ))
+        document.write("Tabela de Código de Condições de Pagamento <br>  ")
+
+        document.write(" 1 - À Vista em Dinheiro ou Pix, recebe 15% de desconto <br> ")
+
+                
+        document.write("2 - À Vista no cartão de crédito, recebe 10% de desconto <br> ")
+
+                
+        document.write("3 - Parcelado no cartão em duas vezes, preço normal do produto sem juros <br> ")
+
+                
+        document.write("4 - Parcelado no cartão em três vezes ou mais, preço normal do produto mais juros de 10% <br><br> ")
+
+        let calculo1 = valorProd * 0.15;
+        let calculo2 = valorProd * 0.10;
+        let calculo3 = valorProd * 0.10;
+
+        
+        console.log(calculo1)
+
+        if(conPagamento == 1){
+            document.write("Avista com desconto de 15% o valor ficara: " + (valorProd - calculo1 ) + "<br>");
+        }
+        else if (conPagamento == 2) {
+            document.write("À Vista no cartão de crédito, recebe 10% de desconto o seu valor ficara: " + (valorProd - calculo2)  + "<br>");
+        }
+
+        else if (conPagamento == 3) {
+            document.write("Parcelado no cartão em duas vezes o seu valor ficara sem alterações: " + valorProd + "<br>");
+        }
+
+        else if (conPagamento == 4) {
+            document.write("Parcelado no cartão em três vezes ou mais o seu valor ficara com 10% de juros: " + (valorProd + calculo3) + "<br>");
+        }
+                
+
+    </script>
+</body>
+</html>
