@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>
+        15 - Faça um algoritmo que leia o ano em que uma pessoa nasceu, imprima na tela quantos anos, meses e dias essa pessoa ja viveu. Leve em consideração o ano com 365 dias e o mês com 30 dias.
+
+        (Ex: 5 anos, 2 meses e 15 dias de vida)
+    </h2>
+    <script>
+        let anoNasci = parseInt(prompt("Digite o ano que nasceu!"));
+
+        let anos = 2024 - anoNasci ;
+
+        let meses = anos * 12;
+
+        let dias = meses * 30
+        
+        document.write(anos + " anos, "+ meses + " meses e " + dias + " dias de vida")
+
+    </script>
+</body>
+</html>
