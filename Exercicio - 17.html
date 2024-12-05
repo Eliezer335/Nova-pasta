@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>
+        - Faça um algoritmo que leia uma temperatura em Fahrenheit e calcule a temperatura correspondente em grau Celsius. Imprima na tela as duas temperaturas.
+
+          Fórmula: C = (5 * ( F-32) / 9)
+    </h2>
+
+    <script>
+       let Fahrenheit = parseFloat(prompt("digite os graus em Fahrenheit"));
+       let celsius = parseFloat(prompt("digite graus em celsius"))
+       let calculo = (Fahrenheit - 32) / 1.8;
+       let calculo2 = (celsius * 1.8) + 32;
+
+       document.write(calculo)
+       document.write(calculo2)
+
+    </script>
+</body>
+</html>
