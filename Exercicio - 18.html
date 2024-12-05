@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>
+        Francisco tem 1,50m e cresce 2 centímetros por ano, enquanto Sara tem 1,
+        10m e cresce 3 centímetros por ano. Faça um algoritmo que calcule e 
+        imprima na tela em quantos anos serão necessários para que Francisco 
+        seja maior que Sara.
+    </h2>
+    <script>
+        let Francisco = 1.50;
+        let Sara = 1.10;
+
+        let anos = parseFloat(prompt("Digite quantos anos acha que sera"));
+
+        let calculo1 = (anos *  0.02) + Francisco;  
+        let calculo2 = (anos *  0.03) + Sara;  
+
+
+        document.write(calculo1.toFixed(2) + "<br>")
+        document.write(calculo2.toFixed(2))
+
+    </script>
+</body>
+</html>
